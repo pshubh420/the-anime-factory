@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+import { Link } from 'react-router-dom';
 
 const AnimationTextHome = ({ firstImage, secondImage, text, type }) => {
 
@@ -65,25 +66,25 @@ const AnimationTextHome = ({ firstImage, secondImage, text, type }) => {
                     >
                         <div className='relative' >
                             <img src={firstImage} alt="firstImage" />
-                            <button className={`absolute 
+                            <Link to='/shop' className={`absolute inline-block 
                                  ${type == "feature" && ' sm:left-[45%]  left-[35%]  bg-black text-white bottom-1 '}  
                                  ${type == "trending" && ' top-[18%] left-[38%] sm:left-[41%] bg-white text-black '}  
                                  ${type == "newDrop" && ' bottom-[20%] left-[35%] sm:left-[45%] bg-white text-black  rounded-xl '}  
                                  
                                  px-5 py-2 border-1`}  >
                                 Shop
-                            </button>
+                            </Link>
                         </div>
                         <div className='relative' >
                             <img src={secondImage} className='object-cover' alt="secondImage" />
-                            <button className={`absolute  
+                            <Link to='/shop' className={`absolute inline-block  
                                  ${type == "feature" && ' left-[35%] sm:left-[45%]   bg-white text-black bottom-1 '}  
                                  ${type == "trending" && ' top-[45%] left-[5%] sm:left-[15%]    border-1  bg-black text-white '}  
                                  ${type == "newDrop" && ' top-8 left-[35%] sm:left-[45%]  bg-white text-black '} 
 
                                  border-1 px-5 py-2`} >
                                 Shop
-                            </button>
+                            </Link>
 
                             {type === "trending" && <div className='absolute left-0 bottom-10' >
                                 <h2 className='text-3xl font-bold sm:text-6xl md:text-6xl ' >
