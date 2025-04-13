@@ -11,12 +11,14 @@ import Support from '../pages/Support'
 import CartPage from '../pages/CartPage'
 import ProductPage from '../pages/ProductPage'
 import PlaceOrder from '../pages/PlaceOrder'
+import ScrollTop from '../components/ScrollTop'
 
 function App() {
 
   return (
     <>
       <BrowserRouter>
+    <ScrollTop />
       <Loader />
       <Header />
       <Routes>
