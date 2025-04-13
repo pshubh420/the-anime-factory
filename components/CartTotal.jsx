@@ -7,13 +7,7 @@ const CartTotal = () => {
     let cartItem = useSelector((state) => state.cartItems)
     const [subTotal, setSubTotal] = useState(0)
     const [shipping, setShipping] = useState(0)
-
-
-
-
-
-
-
+    
     useEffect(() => {
 
             let subTotal = 0

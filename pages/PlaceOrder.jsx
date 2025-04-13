@@ -1,5 +1,5 @@
 import React from 'react'
-import CartTotal from '../components/cartTotal'
+import CartTotal from '../components/CartTotal'
 import { Link } from 'react-router-dom'
 
 const PlaceOrder = () => {

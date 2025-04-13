@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from 'react-redux'
 import deleteIcon from '/delete.png'
-import CartTotal from '../components/cartTotal'
 import { decreaseItemQuantity, increaseItemQuantity, removeFromCart } from '../store/cartSlice'
 import { Link } from 'react-router-dom'
+import CartTotal from '../components/CartTotal'
 const CartPage = () => {
 
     let cartItem = useSelector((state) => state.cartItems)
