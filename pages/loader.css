@@ -1,0 +1,46 @@
+.loaderIn{
+    animation: loaderAniIn 1.5s forwards;
+    transition: all;
+    transition: ease-in;
+}
+
+@keyframes loaderAniIn {
+    0%{
+        width: 0%;
+    } 
+    100%{
+        width: 50%;
+    }
+}
+
+
+.loaderOut{
+    animation: loaderAniOut 1s forwards;
+    transition: all;
+}
+
+@keyframes loaderAniOut{
+    0%{
+        width: 50%;
+    }
+    100%{
+        width: 0%;
+    }
+}
+
+.logo{
+    animation: logoAni 5s forwards;
+    transition: all;
+}
+
+@keyframes logoAni {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}

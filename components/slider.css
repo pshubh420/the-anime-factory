@@ -1,0 +1,29 @@
+.sliderNext{
+  animation: slideNext 1s forwards;
+  transition: all 0.5;
+}
+
+@keyframes slideNext {
+    from{
+      transform: translateX(0px);
+    }
+    to{
+      transform: translateX(-340px);
+    }
+}
+
+.sliderPrev{
+  animation: slidePrev 1s forwards;
+  transition: all 0.5;
+  transform: translateX(-300px);
+}
+
+@keyframes slidePrev {
+  from{
+    transform: translateX(-300px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
