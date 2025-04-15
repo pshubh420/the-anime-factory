@@ -12,6 +12,7 @@ import CartPage from '../pages/CartPage'
 import ProductPage from '../pages/ProductPage'
 import PlaceOrder from '../pages/PlaceOrder'
 import ScrollTop from '../components/ScrollTop'
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
 
@@ -37,7 +38,9 @@ function App() {
           
       </Routes>
         <Footer />
+        <SpeedInsights />
       </BrowserRouter>
+
     </>
   )
 }

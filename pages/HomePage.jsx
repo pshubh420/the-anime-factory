@@ -262,7 +262,7 @@ const HomePage = () => {
                     viewport={{once:true}}
                     
                     >Get 30% Off</motion.h2>
-                    < MotionLink className='py-3 px-10 bg-black text-white inline-block  ' 
+                    < MotionLink to='/shop' className='py-3 px-10 bg-black text-white inline-block  ' 
                     
                     initial={{
                         opacity : 0
