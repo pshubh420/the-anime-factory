@@ -24,8 +24,8 @@ const Support = () => {
                     <p className='font-semibold text-white text-center mb-5 sm:mb-2 ' >How Can We Help</p>
                     <div className='grid grid-cols-1 sm:grid-cols-2 gap-2' >
                         <input type="text" placeholder='First Name' className='border-1 border-white text-white p-3 placeholder-opacity-100 placeholder-white font-semibold ' required />
-                        <input type="text" placeholder='First Name' className='border-1 border-white text-white p-3 placeholder-opacity-100 placeholder-white font-semibold ' required />
-                        <input type="text" placeholder='Emaili' className='border-1 border-white text-white p-3 placeholder-opacity-100 placeholder-white font-semibold ' required />
+                        <input type="text" placeholder='Last Name' className='border-1 border-white text-white p-3 placeholder-opacity-100 placeholder-white font-semibold ' required />
+                        <input type="text" placeholder='Email' className='border-1 border-white text-white p-3 placeholder-opacity-100 placeholder-white font-semibold ' required />
                         <input type="text" placeholder='Phone' className='border-1 border-white text-white p-3 placeholder-opacity-100 placeholder-white font-semibold ' required />
                         <div className='relative flex justify-between items-center border-1 border-white text-white font-semibold  sm:col-span-2 p-3'
                             onClick={() => { setShowIssueOptions(!showIssueOptions) }}
