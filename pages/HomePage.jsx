@@ -20,6 +20,8 @@ import { animate, spring } from 'motion'
 import AnimationTextHome from '../components/AnimationTextHome'
 import ReviewSection from '../components/ReviewSection'
 import { preload } from 'react-dom'
+import { Link } from 'react-router-dom'
+import { link } from 'motion/react-client'
 
 
 const HomePage = () => {
@@ -27,6 +29,7 @@ const HomePage = () => {
     let isMobileView = window.screen.width < 420
 
     const videoRef = useRef()
+    const MotionLink = motion(Link)
 
 
 
@@ -259,7 +262,7 @@ const HomePage = () => {
                     viewport={{once:true}}
                     
                     >Get 30% Off</motion.h2>
-                    <motion.button className='py-3 px-10 bg-black text-white  ' 
+                    < MotionLink className='py-3 px-10 bg-black text-white inline-block  ' 
                     
                     initial={{
                         opacity : 0
@@ -273,7 +276,7 @@ const HomePage = () => {
                     }}
                     viewport={{once:true}}
                     
-                    >Shop Now</motion.button>
+                    >Shop Now</ MotionLink>
 
                 </div>
 
